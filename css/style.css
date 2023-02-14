@@ -1,0 +1,391 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", sans-serif
+}
+
+body .clear {
+    clear: both;
+}
+
+.header {
+    position: fixed;
+    height: 46px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000000000000000;
+}
+
+.nav {
+    display: inline-block;
+    margin: 0;
+}
+
+.nav>li {
+    position: relative;
+    display: inline-block;
+    /* font-weight: bolder; */
+}
+
+.nav>li>a {
+    display: inline-block;
+    line-height: 46px;
+    padding: 0px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav>li:hover>a {
+    color: #000;
+    background-color: #ccc;
+}
+
+.nav li:hover .subnav {
+    display: block;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    width: 200px;
+    box-shadow: 0 0 10px #000;
+}
+
+.subnav li {
+    list-style-type: none;
+    background-color: #fff;
+    padding: 6px 32px;
+    padding-left: 12px;
+    line-height: 32px;
+    width: 200px;
+
+}
+
+.subnav li a {
+    text-decoration: none;
+    color: #000;
+    /* width:200px; */
+}
+
+.subnav li:hover {
+    background-color: #ccc;
+}
+
+.ti-settings {
+    font-size: 14px;
+}
+
+.search-btn {
+    float: right;
+    line-height: 46px;
+    cursor: pointer;
+}
+
+.ti-search {
+    padding: 12px 30px;
+    color: #fff;
+}
+
+.header .search-btn:hover {
+    background-color: red;
+}
+
+.slider {
+    position: relative;
+    margin-top: 46px;
+    background: url("https://www.w3schools.com/w3images/la.jpg") top center / cover no-repeat;
+    padding-top: 50%;
+}
+
+.slider .slider-text {
+    position: absolute;
+    color: #fff;
+    bottom: 64px;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+
+
+}
+
+.slider .slider-text .sub-slider-text {
+    padding-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.content .main-content {
+    width: 800px;
+    text-align: justify;
+    margin: auto;
+    padding: 64px 16px;
+}
+
+.content .main-content .title-content h1 {
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.5;
+
+}
+
+.content .main-content .sub-title-content h2 {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+.content .main-content .text-content p {
+    line-height: 1.5;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.content .theband-content {
+    padding: 32px 0;
+    text-align: center;
+}
+
+.content .theband-content li {
+    padding: 0;
+    display: inline-block;
+    width: 30%;
+}
+
+.content .theband-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 15px 0;
+}
+
+.content .theband-content img {
+    width: 60%;
+    border-radius: 4px;
+}
+
+.content .tourdates-content {
+    background-color: #000;
+}
+
+.tourdates-content .title-content {
+    color: #fff;
+}
+
+.tourdates-content .sub-title-content {
+    color: #fff;
+    opacity: 0.9;
+    padding-bottom: 30px;
+}
+
+.time-date {
+    background-color: #fff;
+}
+
+.time-date>li {
+    list-style-type: none;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    color: #666363;
+    font-size: 15px;
+
+}
+
+.time-date span {
+    background-color: #f44336;
+    color: #fff;
+    padding: 0 8px;
+    text-align: center;
+    margin: 0 12px;
+}
+
+
+#t {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    padding: 3px 8px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.ticket-content {
+    padding: 32px 0;
+    width: 785px;
+    margin-left: -8px;
+
+
+}
+
+.ticket-content>li {
+    margin: 0 8px;
+    list-style-type: none;
+    display: inline-block;
+    width: 30.9182%;
+    background-color: #fff;
+    /* position: relative; */
+
+}
+
+.ticket-content li img {
+    vertical-align: middle;
+    width: 100%;
+    text-align: justify;
+
+}
+
+.tk-title {
+    font-size: 15px;
+    margin: 16px;
+    font-weight: bold;
+}
+
+.tk-subtitle {
+    font-size: 15px;
+    margin: 16px;
+    font-weight: 500;
+    opacity: 0.4;
+}
+
+.tk-content {
+    font-size: 15px;
+    margin: 16px;
+}
+
+.ticket-content button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.ticket-content button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+.ticket-content .sub-ticket-content:last-child {
+    text-align: center;
+}
+
+.mini-frame {
+    display: table;
+    width: 768px;
+    display: inline-block;
+    padding: 32px 0;
+}
+
+.mini-frame ul {
+    display: inline-block;
+    list-style-type: none;
+    width: 49.5%;
+
+}
+
+.info {
+    padding-bottom: 16px;
+}
+
+
+.info li {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.fill {
+    float: right;
+
+}
+
+.fill .fill-top {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+
+
+}
+
+.fill input {
+    padding: 8px;
+}
+
+.fill .fill-top input {
+    margin-bottom: 8px;
+
+}
+
+.fill-top input:first-child {
+    width: 49%;
+    margin-right: 2.5px;
+}
+
+.fill-top input:last-child {
+    width: 49%;
+}
+
+.fill .fill-botton input {
+    width: 100%;
+}
+
+.fill button {
+    float: right;
+    padding: 8px 16px;
+    margin: 16px 0;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    font-size: 15px;
+}
+
+.fill button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.ti {
+    padding-right: 12px;
+    text-align: justify;
+}
+
+.map-content {
+    background: url("https://www.w3schools.com/w3images/map.jpg") top center / cover no-repeat;
+    padding-top: 50%;
+}
+
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.ti-facebook {
+    padding: 8px 2px 0 8px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #666363;
+    border-radius: 2px;
+}
+
+.footer-text {
+    color: #666363;
+    padding: 32px 0;
+}
+
+.footer-text a {
+    color: #666363;
+    padding: 32px 0;
+    font-weight: bold;
+    text-decoration: none;
+}
